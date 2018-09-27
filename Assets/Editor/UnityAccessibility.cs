@@ -40,7 +40,6 @@ public static extern int PCTKPReadW(string lpszString,int priority,int analyze);
 const int TTSPRIORITY_HIGH=4;
 
 static UnityAccessibility(){
-voice("reload");
 LoadSettings();
 pctalker_active=PCTKStatus();
 NVDA_active=nvdaController_testIfRunning();
@@ -55,6 +54,8 @@ compilingSound=AssetDatabase.LoadAssetAtPath("Assets/Editor/UnityAccessibilitySN
 compiledSound=AssetDatabase.LoadAssetAtPath("Assets/Editor/UnityAccessibilitySND/compiled.wav",typeof(AudioClip)) as AudioClip;
 if(isFirstRun()){
  voice("Accessibility enabled");
+}else{
+voice("Done");
 }
 }
 
@@ -150,8 +151,7 @@ c_count=0;
 }
 if(compilingState && !EditorApplication.isCompiling){
 compilingState=false;
-voice("Done");
-PlayClip(compiledSound);
+voice("Fix the errors before running your game");
 }
 if(compilingState){
 c_count++;

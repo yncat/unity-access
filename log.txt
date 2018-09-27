@@ -1,0 +1,5 @@
+Warning : Assets/Editor/UnityAccessibility.cs(11,12): warning CS0414: The private field `UnityAccessibility.m_count' is assigned but its value is never used
+Warning : Assets/Editor/UnityAccessibility.cs(16,20): warning CS0414: The private field `UnityAccessibility.compiledSound' is assigned but its value is never used
+Error : Assets/StartObject.cs(1,0): error CS1525: Unexpected symbol `a'
+Warning : Assets/Editor/UnityAccessibility.cs(11,12): warning CS0414: The private field `UnityAccessibility.m_count' is assigned but its value is never used
+Warning : Assets/Editor/UnityAccessibility.cs(16,20): warning CS0414: The private field `UnityAccessibility.compiledSound' is assigned but its value is never used
